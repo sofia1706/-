@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>บทเรียนคอมพิวเตอร์เบื้องต้น</title>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body bgcolor="#F6C7C8" onLoad="MM_preloadImages('images/2.png','images/4.png','images/6.png','images/8.png')">
+<p>&nbsp;</p>
+<table width="1600" border="1" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+ <tr>
+    <td colspan="2" bgcolor="#ED7883"><img src="images/pok.png" width="1600" height="250" alt=""/></td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#ED7883"><marquee direction="right" style="color: #FFFAF6">
+      ยินดีต้อนรับ
+      </marquee>
+      &nbsp;</td>
+  </tr>
+  <tr>
+    <td width="256" align="left" valign="top"><table width="253" border="0">
+      <tbody>
+        <tr>
+          <td width="247"><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','images/2.png',1)"><img src="images/1.png" alt="" width="250" height="50" id="Image2"></a></td>
+        </tr>
+        <tr>
+          <td><a href="prosess.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','images/4.png',1)"><img src="images/3.png" alt="" width="250" height="50" id="Image3"></a></td>
+        </tr>
+        <tr>
+          <td><a href="component.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','images/6.png',1)"><img src="images/5.png" alt="" width="250" height="50" id="Image4"></a></td>
+        </tr>
+        <tr>
+          <td><a href="1234.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','images/8.png',1)"><img src="images/7.png" alt="" width="250" height="50" id="Image5"></a></td>
+        </tr>
+      </tbody>
+    </table></td>
+    <td width="1338" align="center" valign="top"><table width="95%" border="0" align="center">
+      <tbody>
+        <tr>
+          <td width="95%" align="center"><p>หลักการทำงาน</p>
+            <p>&nbsp;</p></td>
+          </tr>
+        <tr>
+          <td align="left"><strong id="docs-internal-guid-f0a3922e-7fff-830f-e441-c576c83194b2">
+            <p dir="ltr">หลักการทำงานของคอมพิวเตอร์</p>
+            <p dir="ltr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หลัก การทำงานของคอมพิวเตอร์จะเป็นไปตามที่โปรแกรมได้กำหนดไว้&nbsp; โดยตัวเครื่องคอมพิวเตอร์หรือที่เรียกว่าฮาร์ดแวร์&nbsp; จะมีส่วนประกอบสำคัญขั้นพื้นฐาน&nbsp; 5&nbsp; หน่วย&nbsp; ซึ่งแต่ละหน่วยจะมีหลักการทำงาน&nbsp; ดังนี้</p>
+            <p dir="ltr">1.&nbsp; หน่วยรับข้อมูล&nbsp; (input unit)&nbsp; ทำ หน้าที่รับข้อมูลมาจัดเก็บที่หน่วยความจำหลักของคอมพิวเตอร์&nbsp; จากนั้นเมื่อมีคำสั่งให้ประมวลผล&nbsp; ข้อมูลที่ถูกจัดเก็บไว้ที่หน่วยความจำจะถูกส่งไปยังหน่วยประมวลผล</p>
+            <p dir="ltr">&nbsp;&nbsp;&nbsp;2.&nbsp; หน่วยประมวลผลกลาง (central processing unit) ทำหน้าที่ประมวลผลให้ได้ผลลัพธ์ตามที่ต้องการ&nbsp; จากนั้นผลลัพธ์จะถูกส่งไปจัดเก็บที่หน่วยความจำหลัก</p>
+            <p dir="ltr">&nbsp;&nbsp;3.&nbsp; หน่วยความจำหลัก (main memory) ทำ หน้าที่จัดเก็บข้อมูลและโปรแกรมต่างๆ ในขณะที่เครื่องคอมพิวเตอร์เปิดอยู่เท่านั้น&nbsp; ถ้าปิดเครื่องคอมพิวเตอร์ข้อมูลหรือโปรแกรมนั้นจะสูญหายไป</p>
+            <p dir="ltr">4.&nbsp; หน่วยแสดงผล (output unit) ทำหน้าที่นำผลลัพธ์ที่ได้จากการประมวลผลมาแสดงผลหรือจัดเก็บไว้ที่หน่วยความจำรอง</p>
+            <p dir="ltr">5.&nbsp; หน่วยความจำรอง (secondary storage) ทำ หน้าที่จัดเก็บข้อมูลและโปรแกรมต่างๆ&nbsp; เพื่อนำมาใช้อีกครั้งในภายหลังได้&nbsp; แม้จะปิดเครื่องคอมพิวเตอร์ข้อมูลและโปรแกรมที่จัดเก็บไว้จะไม่สูญหาย</p>
+            <br />
+            <p dir="ltr">&nbsp;</p>
+            <br />
+            <p dir="ltr">&nbsp;</p>
+            <br />
+            <p dir="ltr">&nbsp;</p>
+          </strong><br></td>
+        </tr>
+        <tr>
+          <td align="center"><p><strong id="docs-internal-guid-f0a3922e-7fff-830f-e441-c576c83194b"><img src="https://lh3.googleusercontent.com/xoaLCYDz9cyfCyNF7hk319OUD79K2IxWvXeSh_XNSIqVhVWjXX0VcFOus28UcnP3pE_nVwc9zh-ujNduBJR0iJiHae1Q6hsuUW5cWGisM_6jswMHgRwBcGwV8k3rI9ISgqtgmxW5us_08kqvDxvZRQ6bmG89Beb-tBNjK7yEg-yX1cBEBJQKNjmcmQXL" width="492" height="241" /></strong></p>
+            <p><strong id="docs-internal-guid-f0a3922e-7fff-830f-e441-c576c83194b3">ผังแสดงการทำงานของเครื่องคอมพิวเตอร์</strong></p></td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</tbody>
+<tbody>
+</tbody>
+<tbody>
+</tbody>
+<tbody>
+</tbody>
+</table>
+</body>
+</html>
